@@ -9,7 +9,7 @@ class Auth extends CI_Controller{
     }
     public function reg_action(){
         $nama_lengkap = $this->input->post('nama_lengkap');
-        $username = $this->input->post('username');
+        $mail = $this->input->post('mail');
         $password = $this->input->post('password');
         $repassword = $this->input->post('repassword');
         
@@ -19,10 +19,10 @@ class Auth extends CI_Controller{
         else{
             $data = array(
                 'nama_lengkap' => $nama_lengkap,
-                'username' => $username,
-                'password' => $password,
+                'mail' => $mail,
+                'password' => md5($password),
             );
-            $result = $this->model->simpan('user, $data');
+            $result = $this->Model->simpan('user', $data);
             if($result>0){
                 echo "Data User Berhasil Disimpan";
             }

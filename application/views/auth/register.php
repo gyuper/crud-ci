@@ -39,7 +39,7 @@
         <span class="glyphicon glyphicon-user form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
-        <input type="email" name="username" class="form-control" placeholder="Username">
+        <input type="email" name="mail" class="form-control" placeholder="Email">
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
@@ -47,7 +47,7 @@
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
-        <input type="password" name="repassword" class="form-control" placeholder="Retype password">
+        <input type="password" name="repassword" class="form-control" placeholder="Konfirmasi Password">
         <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
       </div>
       <div class="row">

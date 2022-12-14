@@ -10,7 +10,7 @@ class Model extends CI_Model{
     public function update($tabel, $data, $where){
         return $this->db->iupdate($tabel, $data, $where);
     }
-    public function getuser($where = ''){
+    public function getusers($where = ''){
         return $this->db->query('SELECT * FROM user');
     }
 }
